@@ -72,14 +72,14 @@ button:hover{
         border: 0;
         transition: all 0.2s ease;
     }
-    #portfolio{
+    #hideprojects{
         margin-top: 5vh;
     }
-    #projects img{
+    #showprojects img{
         width: 1.2vw;
         transform: rotate(180deg);
     }
-    #portfolio img{
+    #hideprojects img{
         width: 1.2vw;
     }
     button:hover{
@@ -104,7 +104,7 @@ button:hover{
     section{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: baseline;
         align-items: center;
     }
     section h1{
@@ -112,18 +112,18 @@ button:hover{
         font-style: italic;
     }
     section img{
-        width: 45vw;
-        border: 0.5vw solid rgb(100, 100, 100);
+        width: 42vw;
+        border: 0.5vw solid black;
         border-radius: 0.5vw;
         transition: filter 0.5s ease;
         margin: 2vh;
+    }
+    section img:hover{
+        filter: brightness(0.5);
     }
     section p{
         font-size: 1.35vw;
         text-align: justify;
         width: 40vw;
-    }
-    section img:hover{
-        filter: brightness(0.5);
     }
 }

@@ -1,20 +1,20 @@
 $(document).ready(()=>{
     $('main').hide();
-    $('#portfolio').hide();
+    $('#hideprojects').hide();
     
-    $('#portfolio').click(()=>{
+    $('#hideprojects').click(()=>{
         $('main').fadeOut(700, ()=>{
             $('header').fadeIn(700);
-            $('#projects').fadeIn();
+            $('#showprojects').fadeIn();
         });
-        $('#portfolio').fadeOut(700);
+        $('#hideprojects').fadeOut(700);
     });
 
-    $('#projects').click(()=>{
+    $('#showprojects').click(()=>{
         $('header').fadeOut(700, ()=>{
             $('main').fadeIn(700);
-            $('#portfolio').fadeIn();
+            $('#hideprojects').fadeIn();
         });
-        $('#projects').fadeOut(700);
+        $('#showprojects').fadeOut(700);
     });
 });
