@@ -70,6 +70,7 @@ button:hover{
         font-size: 2vw;
         padding: 0.4vw;
         border: 0;
+        z-index: 100;
         transition: all 0.2s ease;
     }
     #hideprojects{
@@ -112,7 +113,7 @@ button:hover{
         font-style: italic;
     }
     section img{
-        width: 42vw;
+        width: min(30vw, 70vh);
         border: 0.5vw solid black;
         border-radius: 0.5vw;
         transition: filter 0.5s ease;
