@@ -3,16 +3,20 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-::-webkit-scrollbar{
-    width: 0.8vw;
-    background-color: rgb(200, 200, 200);
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(121, 121, 121);
-}
 body{
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0 0 20vw 0 rgb(100, 100, 100);
+    color: black;
+}
+button{
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.sobre h1{
+    color: white;
 }
 
 /* ---------- Media Queries ---------- */
@@ -24,6 +28,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        height: 100vh;
     }
 
     /* ----- Header ----- */
@@ -31,14 +37,15 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100vh;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 10vh;
     }
     .sobre{
         font-size: 4vw;
     }
     .sobre h1{
-        color: white;
         -webkit-text-stroke: 0.3vw black;
     }
     .me{
@@ -46,13 +53,11 @@ body{
         text-align: justify;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 1vw;
     }
     .textMe{
         width: 40vw;
-    }
-    a{
-        color: blue;
     }
     .Link{
         width: 5vw;
@@ -60,5 +65,65 @@ body{
     }
     .Link:hover{
         transform: scale(1.3) rotate(360deg);
+    }
+    button{
+        font-size: 2vw;
+        padding: 0.4vw;
+        border: 0;
+        transition: all 0.2s ease;
+    }
+    #portfolio{
+        margin-top: 5vh;
+    }
+    #projects img{
+        width: 1.2vw;
+        transform: rotate(180deg);
+    }
+    #portfolio img{
+        width: 1.2vw;
+    }
+    button:hover{
+        transform: scale(1.1);
+        border-radius: 0.5vw;
+    }
+
+    /* ----- Main ----- */
+    main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 80vh;
+        margin-bottom: 10vh;
+    }
+    article{
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section h1{
+        font-size: 3vw;
+        font-style: italic;
+    }
+    section img{
+        width: 45vw;
+        border: 0.5vw solid rgb(100, 100, 100);
+        border-radius: 0.5vw;
+        transition: filter 0.5s ease;
+        margin: 2vh;
+    }
+    section p{
+        font-size: 1.35vw;
+        text-align: justify;
+        width: 40vw;
+    }
+    section img:hover{
+        filter: brightness(0.5);
     }
 }
