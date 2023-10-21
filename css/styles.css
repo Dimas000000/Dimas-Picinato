@@ -16,13 +16,135 @@ button:hover{
     background-color: rgba(0, 0, 0, 0.07);
 }
 .sobre h1{
-    color: white;
+    color: rgba(0, 0, 0, 0);
 }
 
 /* ---------- Media Queries ---------- */
 
+/* ----- Mobile ----- */
+@media only screen and (max-width: 700px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* ----- Header ----- */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 75vh;
+        margin-top: 10vh;
+    }
+    .sobre{
+        font-size: min(6.5vw, 13vh);
+    }
+    .sobre h6{
+        font-size: min(6.5vw, 13vh);
+    }
+    .sobre h1{
+        -webkit-text-stroke: min(0.55vw, 1.1vh) black;
+    }
+    .me{
+        font-size: min(4vw, 8vh);
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1vw;
+    }
+    .textMe{
+        width: min(85vw, 170vh);
+        margin-bottom: min(3vw, 6vh);
+    }
+    #links{
+        order: 1;
+        width: min(85vw, 170vh);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .Link{
+        width: min(15vw, 30vh);
+        transition: all 0.5s ease;
+    }
+    .Link:hover{
+        transform: scale(1.3) rotate(360deg);
+    }
+    button{
+        font-size: min(6vw, 12vh);
+        padding: min(1.2vw, 2.4vh);
+        border: 0;
+        z-index: 10;
+        transition: all 0.2s ease;
+    }
+    #hideprojects{
+        margin-top: 1vh;
+    }
+    #showprojects img{
+        width: min(4vw, 8vh);
+        transform: rotate(180deg);
+    }
+    #hideprojects img{
+        width: min(4vw, 8vh);
+    }
+    button:hover{
+        transform: scale(1.1);
+        border-radius: min(3vw, 6vh);
+    }
+
+    /* ----- Main ----- */
+    main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 95vh;
+        margin-bottom: 8vh;
+    }
+    article{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+    }
+    section h1{
+        font-size: min(8vw, 16vh);
+        font-style: italic;
+    }
+    section img{
+        width: min(70vw, 140vh);
+        border: min(1vw, 2vh) solid black;
+        border-radius: min(1vw, 2vh);
+        transition: filter 0.5s ease;
+        margin: min(0.5vw, 1vh);
+    }
+    section img:hover{
+        filter: brightness(0.5);
+    }
+    section p{
+        font-size: min(3vw, 6vh);
+        text-align: justify;
+        width: min(87vw, 174vh);
+    }
+}
+
 /* ----- Desktop ----- */
-@media only screen and (min-width: 0px)
+@media only screen and (min-width: 700px)
 {
     body{
         display: flex;
@@ -43,13 +165,13 @@ button:hover{
         margin-top: 10vh;
     }
     .sobre{
-        font-size: 4vw;
+        font-size: min(4vw, 8vh);
     }
     .sobre h1{
-        -webkit-text-stroke: 0.3vw black;
+        -webkit-text-stroke: min(0.3vw, 0.6vh) black;
     }
     .me{
-        font-size: 1.5vw;
+        font-size: min(1.5vw, 3vh);
         text-align: justify;
         display: flex;
         justify-content: space-between;
@@ -57,35 +179,35 @@ button:hover{
         margin-top: 1vw;
     }
     .textMe{
-        width: 40vw;
+        width: min(40vw, 80vh);
     }
     .Link{
-        width: 5vw;
+        width: min(5vw, 10vh);
         transition: all 0.5s ease;
     }
     .Link:hover{
         transform: scale(1.3) rotate(360deg);
     }
     button{
-        font-size: 2vw;
-        padding: 0.4vw;
+        font-size: min(2vw, 4vh);
+        padding: min(0.4vw, 0.8vh);
         border: 0;
-        z-index: 100;
+        z-index: 10;
         transition: all 0.2s ease;
     }
     #hideprojects{
         margin-top: 5vh;
     }
     #showprojects img{
-        width: 1.2vw;
+        width: min(1.2vw, 2.4vh);
         transform: rotate(180deg);
     }
     #hideprojects img{
-        width: 1.2vw;
+        width: min(1.2vw, 2.4vh);
     }
     button:hover{
         transform: scale(1.1);
-        border-radius: 0.5vw;
+        border-radius: min(0.5vw, 1vh);
     }
 
     /* ----- Main ----- */
@@ -109,22 +231,22 @@ button:hover{
         align-items: center;
     }
     section h1{
-        font-size: 3vw;
+        font-size: min(3vw, 6vh);
         font-style: italic;
     }
     section img{
-        width: min(30vw, 70vh);
-        border: 0.5vw solid black;
-        border-radius: 0.5vw;
+        width: min(42vw, 84vh);
+        border: min(0.5vw, 1vh) solid black;
+        border-radius: min(0.5vw, 1vh);
         transition: filter 0.5s ease;
-        margin: 2vh;
+        margin: min(1vw, 2vh);
     }
     section img:hover{
         filter: brightness(0.5);
     }
     section p{
-        font-size: 1.35vw;
+        font-size: min(1.35vw, 2.7vh);
         text-align: justify;
-        width: 40vw;
+        width: min(40vw, 80vh);
     }
 }
