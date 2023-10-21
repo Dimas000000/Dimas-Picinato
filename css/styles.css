@@ -123,23 +123,23 @@ button:hover{
         align-items: center;
     }
     section h1{
-        font-size: min(8vw, 16vh);
+        font-size: min(8vw, 4vh);
         font-style: italic;
     }
     section img{
-        width: min(70vw, 140vh);
-        border: min(1vw, 2vh) solid black;
-        border-radius: min(1vw, 2vh);
+        width: min(70vw, 35vh);
+        border: min(1vw, 0.5vh) solid black;
+        border-radius: min(1vw, 0.5vh);
         transition: filter 0.5s ease;
-        margin: min(0.5vw, 1vh);
+        margin: min(0.5vw, 0.25vh);
     }
     section img:hover{
         filter: brightness(0.5);
     }
     section p{
-        font-size: min(3vw, 6vh);
+        font-size: min(3vw, 1.5vh);
         text-align: justify;
-        width: min(87vw, 174vh);
+        width: min(87vw, 43.5vh);
     }
 }
 
