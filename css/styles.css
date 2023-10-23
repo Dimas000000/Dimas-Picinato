@@ -235,7 +235,7 @@ button:hover{
         font-style: italic;
     }
     section img{
-        width: min(42vw, 84vh);
+        width: min(50vw, 100vh);
         border: min(0.5vw, 1vh) solid black;
         border-radius: min(0.5vw, 1vh);
         transition: filter 0.5s ease;
