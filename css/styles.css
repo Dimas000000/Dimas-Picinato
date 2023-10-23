@@ -139,7 +139,7 @@ button:hover{
     section p{
         font-size: min(3vw, 1.5vh);
         text-align: justify;
-        width: min(87vw, 43.5vh);
+        width: min(85vw, 42.5vh);
     }
 }
 
