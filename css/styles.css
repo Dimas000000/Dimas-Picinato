@@ -83,6 +83,7 @@ button:hover{
         padding: min(1.2vw, 0.6vh);
         border: 0;
         z-index: 10;
+        border-radius: min(3vw, 1.5vh);
         transition: all 0.2s ease;
     }
     #hideprojects{
@@ -97,7 +98,6 @@ button:hover{
     }
     button:hover{
         transform: scale(1.1);
-        border-radius: min(3vw, 1.5vh);
     }
 
     /* ----- Main ----- */
@@ -192,6 +192,7 @@ button:hover{
         padding: min(0.4vw, 0.8vh);
         border: 0;
         z-index: 10;
+        border-radius: min(0.5vw, 1vh);
         transition: all 0.2s ease;
     }
     #hideprojects{
@@ -206,7 +207,6 @@ button:hover{
     }
     button:hover{
         transform: scale(1.1);
-        border-radius: min(0.5vw, 1vh);
     }
 
     /* ----- Main ----- */
