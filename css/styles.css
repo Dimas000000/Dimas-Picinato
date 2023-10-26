@@ -10,10 +10,10 @@ body{
 }
 button{
     color: black;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 button:hover{
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 .sobre h1{
     color: rgba(0, 0, 0, 0);
